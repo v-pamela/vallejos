@@ -20,16 +20,15 @@ header{
   grid-template-areas: "header"; 
 }
 
+<<<<<<< HEAD
 .encabezado{
   background-image: linear-gradient(to right, #F5EAE5, #DEB4BB);
   margin: 0px;
   padding: 0px;
   display: flex;
+=======
+>>>>>>> rama
 
-}
-#l{
-  margin: 10px;
-}
 #logo{
   display: flex;
   align-items: left;
@@ -39,27 +38,19 @@ header{
   margin-right: 10px;
   margin-left: 10px;
 }
-.menu{
-  width: inherit;
-  padding: 0px;
-  margin: 1px;
-}
+
 
 .lista{
-  float: right;
-  list-style: none;
-  font-size: 0px;
-  padding: 0px;
-  margin: 0px;
+  font-size: 20px;
+  text-decoration: none;
 }
-.lista li{
-  height: 30px;
-  margin-top: 20px;
-  display: inline-block;
-  font-size: 25px;
-  position: relative; 
+.item{
+  padding: 0px 5px 0px 5px;
+  font-size: 30px;
+  color: black;
   border-right: 1px solid black;  
   border-left: 1px solid black;
+<<<<<<< HEAD
   transition: all 2s;
 }
 
@@ -72,79 +63,32 @@ header{
 }
 
 .lista li a:after{
+=======
+  text-align: center;
+}
+.lista .item:hover{
+  background-color: #ffff94;
+}
+.lista a:after{
+>>>>>>> rama
   display: block;
   content: "";
-  position: absolute;
-  right:0;
-  bottom:0;
-  left:0;
-  width:100%;
   background-color: black;
-  height: 2px;
+  height: 3px;
   transform: scale(0,1);
-  transform-origin: left;
+  transform-origin: center;
   transition: transform .25s;
 }
-.lista li a:hover:after{
+
+.lista a:hover:after{
   transform: scale(1,1);
 }
 
 
-header ul li a{
-  text-decoration: none;
-  color: black;
-  padding-left: 5px;
-  padding-right: 5px ;
-}
-
-.responsive-bottom{
-  background-color:  #b3dbb3;
-  border: none;
-  display: none;
-}
-
-
-@media only screen and (max-width:850px){
+@media only screen and (max-width: 992px){
   
-  .lista{
-    right: 0px;
-    flex-direction: column;
-    top:70px;
-    height: 50px;
-  }
-  
-
-  .lista li {
-    margin: 0px;
-    background-color: #b3dbb3;
-    display: none;
-    border: 1px solid black;
-    height: 15px;
-    font-size: 15px;
-  }
-  
-  .responsive-bottom{
-  display: block;
-  float: right;
-  cursor: pointer;
-  font-size: 50px;
-  margin: 5px;
-  line-height: 25px;
-  }
-  .menu:hover .lista li{
-    display: block;
-  }
-
-
-}
-@media only screen and (max-width: 550px){
-  .encabezado{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-  }
-  .responsive-bottom{
-    float: center;
+  .item{
+    border: none;
   }
 }
 
@@ -166,6 +110,7 @@ header ul li a{
   width: 200%;
   animation:cambio 10s infinite;
 }
+
 .imagenes li{
 
   list-style:none;
@@ -173,6 +118,7 @@ header ul li a{
   text-align: center;
   max-width: 100%;
 }
+
 .imagenes img{
   position: relative;
   object-fit: contain;
@@ -183,16 +129,6 @@ header ul li a{
   align-items: center;
   justify-content: center;
 }
-
-@keyframes cambio{
-  0%{margin-left:0;}
-  20%{margin-left:0;}
-
-  40%{margin-left:-100%;}
-  60%{margin-left:-100%;}
-}
-
-
   
 
 .imagenes img:hover{
@@ -246,6 +182,15 @@ header ul li a{
   display: grid;
   grid-template-columns: repeat(3,1fr);
 }
+.content h1{
+  font-size: 35px;
+  width: 100%;
+  padding: 4px;
+  margin: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
 .type{
   display: flex;
   flex-direction: column;
@@ -253,13 +198,19 @@ header ul li a{
   margin-bottom: 0px;
   padding: 0px;
   justify-content: center;
-  width: 320px;
+  width: auto;
+  flex-wrap: wrap;
   flex-flow: row wrap;
+  border: none;
+}
+.type img{
+  padding: 20px;
+  object-fit: center;
 }
 
 .info{
-  margin: 1px;
-  border: 0px;
+  padding: 10px;
+  align-content: center;
 }
 
 
@@ -268,12 +219,17 @@ header ul li a{
   margin: 0px 10px 0px 10px;
   text-align: center;
   text-decoration: none;
+<<<<<<< HEAD
   text-shadow: 5px 3px 3px  #6C7F91;
   animation-duration: 6s;
   animation-name: desaparecer;
   animation-delay: 3s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
+=======
+  color: black;
+  font-size: 25px;
+>>>>>>> rama
 }
 
 @keyframes desaparecer {
@@ -295,6 +251,7 @@ header ul li a{
   color: black;
   text-align: center;
   text-decoration: none;
+<<<<<<< HEAD
   transform: rotate(10deg);
 }
 #i3{
@@ -304,18 +261,15 @@ header ul li a{
   object-fit: contain;
 
 }
+=======
+  font-size: 15px;
+}
+
+>>>>>>> rama
 #i4{
-  display: flex;
-  width: inherit;
-  object-fit: contain;
   border: 1px solid black;
 }
-#i5{
-  display: flex;
-  width: inherit;
-  text-align: center;
-  object-fit: contain;
-}
+
 
 @media only screen and (min-width:650px) and (max-width: 1000px){
   .types{
@@ -334,12 +288,17 @@ header ul li a{
 }
 
 footer{
+<<<<<<< HEAD
   background-image: linear-gradient(to left, #F5EAE5, #DEB4BB);
   position: relative;
+=======
+  background-color: #b3dbb3;
+>>>>>>> rama
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   width: 100%;
+  padding: 10px;
  justify-content: center;
   text-align: center;
 }
@@ -351,6 +310,7 @@ footer{
   padding: 0px;
   top: 0px;
   margin-top: 5px;
+  margin-bottom: 5px;
   display: block;
  
 }
@@ -372,181 +332,227 @@ footer{
   font-size: 20px;  
 }
 .logo1{
-  display: block;
+  padding: 10px;
+}
+#logo1{
   text-align: center;
-  max-height: 50px;
+  max-width: 20%;
 }
 
 /**  Productos **/
 .content2{
-  height: 800px;
-  width: 100%;
   margin: 0px;
   padding: 0px;
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(2,1fr);
   grid-gap: 20px;
-  flex-direction: row;
-  flex-wrap: nowrap;
 }
 
 .producto{
-  height: 300px;
   margin: 10px;
   padding: 10px;
+  border: none;
+  justify-content: center;
+  overflow: hidden;
 }
 .producto img {
-  height: 250px;
-  margin: 10px;
+  display: flex;
+  max-width: 100%;
+  max-height: 300px;
+  margin: 5px;
   object-fit: contain;
+  flex-wrap: wrap;
 }
 .producto img:hover{
-  transform:scale(1.1) ;
-  transition: 1s;
+  transform:scale(1.15) ;
+  transition: 0.9s;
+  box-shadow: 2px 2px 5px 3px  #bdbdbd;
 }
-.producto p{
+.name p{
   font-weight: 0.9px;
   font-size: 15px;
-  margin-left: 100px;
+
 }
-.producto h1{
+.name h1{
   font-size: 25px;
-  margin-left: 100px; 
+  text-align: center;
+}
+@media only screen and (max-width:850px){
+  .name p{
+    font-size: 10px;
+  }
+  .name h1{
+    font-size: 20px;
+  }
 }
 
+
 /*** Cuidados ***/
-.content3{
-  height: 90%;
-  width: 100%;
+
+.boxes{
   margin: 0px;
   padding: 0px;
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr, 1fr, 1fr;
   
 }
+
 .content3 h1{
-  height: 25px;
-  width: 100%;
-  font-size: 20px;
+  font-size: 40px;
   text-align: center;
   margin-top: 10px;
 }
-.content3 h2{
-  height: 20px;
-  width: 50%;
+.boxes h2{
+  font-size: 25px;
+  text-align: center;
+  margin-top: 10px;
+}
+.boxes .text{
+  padding: 30px;
+}
+
+.text p{
   font-size: 15px;
-  text-align: center;
-  margin-top: 10px;
-  margin-block: 10px;
+  max-height: 150px;
+  overflow: scroll;
 }
+
 .R1{
-  height: 130px;
   padding: 0px;
-  text-align: left;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
 }
-.content3 p{
+.boxes p{
   font-size: 15px;
-  width: 400px;
-  height: 100px; 
+   
   margin: 2px;
 }
 #ir1{
-  height: 100px;
-  width: 200px;
-  border: 1px;
+  max-width: 100%;
+  padding: 10px;
 }
 #ir2{
-  height: 100px;
-  width: 200px;
-  border: 1px; 
+  max-width: 100%;
+  padding: 10px;
 }
 .R2{
-  height: 130px;
-  padding: 0px;
-  text-align: left;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
 }
 .R3{
-  height: 130px;
-  padding: 0px;
-  text-align: left;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
 }
 #ir3{
-  height: 100px;
-  width: 200px;
-  border: 1px;
+  width: 100%;
+  padding: 10px;
 }
+
+
 /*** Nosotros ***/
 .content4{
   background-color: white;
-  height: 450px;
-  width: 100%;
+  padding: 50px;
+  
 }
 .box-info{
-  height: 350px;
-  width: 700px;
-  background-color: #ffff94;
+  display: grid;
+  width: inherit;
+  grid-template-columns: repeat(2,1fr);
+  background-image: linear-gradient(to left,#ffff94, #c2ffc9);
   border: 2px solid black;
-  margin: 50px 350px 50px 300px;
-  display: inline-block;
+  margin: auto;
+  top: 50px;
+  bottom: 50px;
 }
 .presentacion{
-  height: 400px;
-  width: 300px;
+  height: inherit;
+  margin-top: 30px;
 }
 #in1{
-  border: 1px solid black;
+  max-width: 100%;
+  margin: auto;
+  padding: 10px;
+  
 }
 .presentacion h1{
-  height: 40px;
-  width: 300px;
+  font-size: 40px;
   color: black;
-  margin: 3px;
+  margin: 5px;
   text-align: center;
 }
 .presentacion p{
   position: relative;
-  height: 100px;
-  width: 300px;
   color: black;
   text-align: center;
-  margin: 3px;
+  font-size: 20px;
+  margin: 15px;
 }
+
+@media only screen and (max-width:700px){
+  content4{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: inherit;
+  } 
+  .presentacion h1{
+    font-size: 30px;
+  }
+  .presentacion p{
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 450px){
+  .box-info{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr, 1fr;
+  }
+}
+
 /*** Contacto ***/
 
 .content5{
-  height: 800px;
   width: 100%;
   margin: 0px;
-  position: relative;
   background-color: white;
 }
 .logo-back{
   height: 500px;
   width: 100%;
   margin-top: 0px;
-  background-image:url("https://previews.123rf.com/images/vicushka/vicushka1803/vicushka180300183/97944042-configuraci%C3%B3n-cosm%C3%A9tica-moderna-para-el-cuidado-de-la-piel-con-accesorios-para-la-fabricaci%C3%B3n-de-m%C3%A1s.jpg");
-
+  background-image:url("../imagenes/productos.webp");
+  text-align: center;
+  display: grid;
+  grid-area: "imagen-logo";
+  padding: 30px;
 }
 
 .logo-back .logo2{
-  font-size: 150px;
+  max-width:50%;
+  font-size: 50px;
   text-align: center;
-  margin: 200px;
+  padding: 4px;
+  margin: auto;
 }
 .contact{
-  height: 300px;
+  display: block;
+  height: auto;
   width: 100%;
+  margin:5px;
+  padding: 10px;
   background-color: white;
   text-align: center;
 }
 .contact h1{
-  height: 30px;
   width: 100%;
-  font-size: 25px;
+  font-size: 50px;
   margin:0px 0px 10px;
 }
+
+
 .contact p{
-  height: 20px;
   width: 100%;
   font-style: italic;
   font-size: 15px;
@@ -554,21 +560,28 @@ footer{
 }
 
 form{
-  font-size: 20px;
-  height: 30px;
+  margin: 3px;
   width: 100%;
   padding: 1px;
+  text-align: center;
 }
 textarea{
   height: 100px;
   width:400px;
 }
-[name="correo"]{
+.form-control{
   font-size: 20px;
-  height: 30px;
-  width: 200px;
+  float: center;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+form h2{
+  font-size: 30px;
 }
 .boton{
-  position: relative;
+  display: block;
   bottom: 0px;
+  margin-left: auto;
+  margin-right: auto; 
 }
