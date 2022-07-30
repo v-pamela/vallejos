@@ -21,18 +21,7 @@ header{
   background-color: #b3dbb3; 
 }
 
-.encabezado{
-  width: 99%;
-  margin: 0px;
-  padding: 0px;
-  display: flex;
 
-}
-#l{
-  margin: 10px;
-  max-height: 50px;
-  width: 300px;
-}
 #logo{
   display: flex;
   align-items: left;
@@ -43,14 +32,10 @@ header{
   margin-left: 10px;
 }
 
-.menu{
-  width: inherit;
-}
 
 .lista{
   font-size: 20px;
   text-decoration: none;
-  width: inherit;
 }
 .item{
   padding: 0px 5px 0px 5px;
@@ -79,16 +64,8 @@ header{
 
 
 @media only screen and (max-width: 992px){
-  .encabezado{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-  }
-  .responsive-bottom{
-    float: center;
-  }
+  
   .item{
-    font-size: 20px;
     border: none;
   }
 }
@@ -206,6 +183,7 @@ header{
 }
 .type img{
   padding: 20px;
+  object-fit: center;
 }
 
 .info{
@@ -291,10 +269,12 @@ footer{
   margin: 5px;
   font-size: 20px;  
 }
-
+.logo1{
+  padding: 10px;
+}
 #logo1{
   text-align: center;
-  max-height: 40px;
+  max-width: 20%;
 }
 
 /**  Productos **/
@@ -372,6 +352,8 @@ footer{
 
 .text p{
   font-size: 15px;
+  max-height: 150px;
+  overflow: scroll;
 }
 
 .R1{
@@ -405,30 +387,6 @@ footer{
   padding: 10px;
 }
 
-
-@media only screen and (min-width:800px)and (max-width:950px){
- #ir1{
-   padding-top: 50px;
- }
-  #ir2{
-    padding-top: 50px;
-  }
-  #ir3{
-    padding-top: 50px;
-  }
-}
-@media only screen and (min-width:200px)and (max-width:800px){
-  
- #ir1{
-   padding-top: 100px;
- }
-  #ir2{
-    padding-top: 100px;
-  }
-  #ir3{
-    padding-top: 100px;
-  }
-}
 
 /*** Nosotros ***/
 .content4{
@@ -484,6 +442,12 @@ footer{
     font-size: 10px;
   }
 }
+@media only screen and (max-width: 450px){
+  .box-info{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr, 1fr;
+  }
+}
 
 /*** Contacto ***/
 
@@ -512,7 +476,7 @@ footer{
 }
 .contact{
   display: block;
-  height: 400px;
+  height: auto;
   width: 100%;
   margin:5px;
   padding: 10px;
@@ -540,7 +504,7 @@ form{
   text-align: center;
 }
 textarea{
-  height: inherit;
+  height: 100px;
   width:400px;
 }
 .form-control{
