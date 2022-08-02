@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  display: block;
+}
+body header {
+  display: grid;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "header";
+  background-color: #b3dbb3;
+}
+body header #logo {
+  max-height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+body header .lista {
+  font-size: 20px;
+  text-decoration: none;
+}
+body header .lista .item {
+  padding: 0px 5px 0px 5px;
+  font-size: 30px;
+  color: black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  text-align: center;
+}
+body header .lista .item:hover {
+  background-color: #82c282;
+}
+body header .lista .item:after {
+  display: block;
+  content: "";
+  background-color: black;
+  height: 3px;
+  transform: scale(0, 1);
+  transform-origin: center;
+  transition: transform 0.25s;
+}
+body header .lista .item:hover:after {
+  transform: scale(1, 1);
+}
+body .slide {
+  width: 100%;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  -o-object-fit: cover;
+     object-fit: cover;
+  min-width: 100px;
+}
+body .slide .imagenes .imagen-item #i1:hover {
+  transform: scale(1.2);
+  box-shadow: 2px #636363;
+}
+body .slide .imagenes .imagen-item #i2:hover {
+  transform: scale(1.2);
+  box-shadow: 2px #636363;
+}
+body .content {
+  height: auto;
+  width: 100%;
+  margin-top: 0px 10px 5px 10px;
+  background-color: white;
+}
+body .content .principal {
+  width: 100%;
+  margin: 2px;
+  background-image: url("imagenes/cremas.jpg");
+  background-size: cover;
+  background-position: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+  flex-wrap: nowrap;
+}
+body .content .principal .principal h1 {
+  font-size: 35px;
+  width: 100%;
+  padding: 4px;
+  margin: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+body .content .principal .principal p {
+  text-align: center;
+  font-size: 20px;
+  height: 60%;
+  width: 90%;
+  padding: 10px;
+  margin: 10px;
+  color: black;
+  text-decoration: none;
+}
+body .content h1 {
+  font-size: 35px;
+  width: 100%;
+  padding: 4px;
+  margin: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+body .content .types {
+  height: auto;
+  padding: 0px;
+  margin: 5px 0px 5px 0px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+body .content .types .type {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 5px 0px 5px;
+  margin-bottom: 0px;
+  border: 0px;
+  padding: 0px;
+  justify-content: center;
+  width: auto;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  border: none;
+}
+body .content .types .type img {
+  padding: 20px;
+  -o-object-fit: center;
+     object-fit: center;
+}
+body .content .types .type .info {
+  padding: 10px;
+  align-content: center;
+}
+body .content .types .type .info h2 {
+  padding: 10px;
+  margin: 0px 10px 0px 10px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+}
+body .content .types .type .info p {
+  padding: 2px;
+  margin: 1px;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+}
+@media only screen and (min-width: 650px) and (max-width: 1000px) {
+  body .content .types .types {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 650px) {
+  body .content .types .types {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+body footer {
+  background-color: #b3dbb3;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  width: 100%;
+  padding: 10px;
+  justify-content: center;
+  text-align: center;
+}
+body footer .sitebelow {
+  color: black;
+  width: 100%;
+  padding: 0px;
+  top: 0px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: block;
+}
+body footer .sitebelow h2 {
+  text-align: center;
+}
+body footer .sitebelow .redes {
+  width: 100%;
+  text-align: center;
+  list-style: none;
+  text-decoration: none;
+  flex-direction: row;
+}
+body footer .sitebelow .redes i {
+  height: 20px;
+  padding: 5px;
+  margin: 5px;
+  font-size: 20px;
+}
+body footer .sitebelow .logo1 {
+  padding: 10px;
+}
+body footer .sitebelow .logo1 #logo1 {
+  text-align: center;
+  max-width: 20%;
+}/*# sourceMappingURL=style.css.map */
