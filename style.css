@@ -26,16 +26,17 @@ body header #logo {
   margin-left: 10px;
 }
 body header .lista {
+  color: black;
   font-size: 20px;
-  text-decoration: none;
+  text-align: none;
 }
 body header .lista .item {
-  padding: 0px 5px 0px 5px;
-  font-size: 30px;
   color: black;
+  font-size: 30px;
+  text-align: center;
+  padding: 0px 5px 0px 5px;
   border-right: 1px solid black;
   border-left: 1px solid black;
-  text-align: center;
 }
 body header .lista .item:hover {
   background-color: #82c282;
@@ -85,27 +86,24 @@ body .content .principal {
      object-fit: contain;
   flex-wrap: nowrap;
 }
-body .content .principal .principal h1 {
-  font-size: 35px;
-  padding: 4px;
+body .content .principal h1, body .content .principal p {
+  font-size: 40px;
+  padding: 5px;
   margin: 10px;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
 }
-body .content .principal .principal p {
-  text-align: center;
-  font-size: 20px;
-  height: 60%;
+body .content .principal p {
+  font-size: 18px;
   padding: 10px;
-  margin: 10px;
+  text-transform: none;
   color: black;
-  text-decoration: none;
 }
-body .content h1 {
-  font-size: 35px;
+body .content h1, body .content .principal p {
+  font-size: 40px;
   width: 100%;
-  padding: 4px;
+  padding: 5px;
   margin: 10px;
   text-align: center;
   text-transform: uppercase;
@@ -155,7 +153,7 @@ body .content .types .type .info p {
   color: black;
   text-align: center;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 18px;
 }
 @media only screen and (min-width: 650px) and (max-width: 1000px) {
   body .content .types {
@@ -190,6 +188,8 @@ body footer .sitebelow {
   display: block;
 }
 body footer .sitebelow h2 {
+  color: black;
+  font-size: 25px;
   text-align: center;
 }
 body footer .sitebelow .redes {

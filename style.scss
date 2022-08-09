@@ -15,6 +15,13 @@ $margin-logo:10px;
     font-family: sans-serif;
     display: block;
 
+
+    @mixin sizes($color,$font,$align){
+          color:$color;
+          font-size: $font;
+          text-align: $align;
+    }
+
     header{
         display: grid;
       
@@ -34,17 +41,16 @@ $margin-logo:10px;
             margin-left: $margin-logo;
         }
 
+       
+
         .lista{
-            font-size: 20px;
-            text-decoration: none;
+            @include sizes(black,20px,none);
 
             .item{
+                @include sizes(black,30px,center);
                 padding: 0px 5px 0px 5px;
-                font-size: 30px;
-                color: $color-texto;
                 border-right: 1px solid $color-texto;  
                 border-left: 1px solid $color-texto;
-                text-align: center;
 
                 &:hover{
                     background-color: $color-hover;
@@ -124,7 +130,7 @@ $margin-logo:10px;
             display: block;
 
             h2{
-                text-align: center;
+                @include sizes(black,25px,center);
             }
 
             .redes{
