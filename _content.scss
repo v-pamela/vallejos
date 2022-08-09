@@ -5,7 +5,7 @@
     background-color: white;
     
     .principal{
-        width: 100%;
+        
         margin: 2px;
         background-image: url("imagenes/cremas.jpg");
         background-size: cover;
@@ -15,7 +15,6 @@
 
         .principal h1{
             font-size: 35px;
-            width: 100%;
             padding: 4px;
             margin: 10px;
             text-align: center;
@@ -27,7 +26,6 @@
             text-align: center;
             font-size: 20px;
             height: 60%;
-            width: 90%;
             padding: 10px;
             margin: 10px;
             color: $color-texto;
@@ -98,7 +96,10 @@
 
           }
 
-          @media only screen and (min-width:650px) and (max-width: 1000px){
+          
+
+      }
+      @media only screen and (min-width:650px) and (max-width: 1000px){
             .types{
               display: grid;
               grid-template-columns: repeat(2,1fr);
@@ -106,14 +107,11 @@
             }
             
           }
-          @media only screen and (max-width: 650px){
+      @media only screen and (max-width: 650px){
             .types{
               display: grid;
               grid-template-columns: 1fr;
               grid-template-rows: repeat(3,1fr);
             }
           }
-
-      }
-
 }
