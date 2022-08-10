@@ -60,7 +60,8 @@ body header .lista .item:hover:after {
 body .slide .imagen {
   height: 100vh;
   background-position: center;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 body .slide .imagen:hover {
   transform: scale(1.1);
@@ -79,7 +80,8 @@ body .content .principal {
   background-image: url("../imagenes/serums2.jpg");
   background-size: cover;
   background-position: center;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   flex-wrap: nowrap;
 }
 body .content .principal .call {
@@ -138,7 +140,8 @@ body .content .types .type {
 body .content .types .type img {
   height: 50%;
   padding: 20px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   padding-bottom: 0px;
 }
 body .content .types .type #i4 {
@@ -211,7 +214,8 @@ body main .content2 .producto img {
   height: 60%;
   padding: 0px;
   margin: 5px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   flex-wrap: wrap;
 }
 body main .content2 .producto img:hover {
@@ -261,7 +265,8 @@ body main .content3 .boxes {
 body main .content3 .boxes .row .consejo-img img {
   width: 90%;
   height: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   padding: 20px;
   flex-wrap: wrap;
 }
@@ -313,7 +318,8 @@ body .content3 .boxes .row {
 body .content3 .boxes .row .consejo-img img {
   width: 90%;
   height: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   padding: 20px;
   flex-wrap: wrap;
 }
@@ -342,148 +348,10 @@ body .content3 .boxes .row .text p::-webkit-scrollbar {
   }
 }
 @media only screen and (max-width: 768px) {
-  body .content3 .boxes .row {
+  body .content3 .boxes .boxes {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
   }
-}
-body main .content4 {
-  background-color: white;
-  padding: 50px;
-}
-body main .content4 .box-info {
-  display: grid;
-  width: inherit;
-  grid-template-columns: repeat(2, 50%);
-  background-image: linear-gradient(to left, #E7E8D1, #D5F2BB);
-  border: 2px solid black;
-  margin: auto;
-  top: 50px;
-  bottom: 50px;
-}
-body main .content4 .box-info div #in1 {
-  height: 90%;
-  width: 100%;
-  margin: auto;
-  padding: 10px;
-  object-fit: cover;
-}
-body main .content4 .box-info .presentacion {
-  height: inherit;
-  margin: auto;
-}
-body main .content4 .box-info .presentacion h1 {
-  font-size: 40px;
-  color: black;
-  margin: 5px;
-  text-align: center;
-}
-body main .content4 .box-info .presentacion p {
-  position: relative;
-  color: black;
-  text-align: center;
-  font-size: 20px;
-  margin: 15px;
-}
-@media only screen and (max-width: 600px) {
-  body main .content4 .box-info {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr, 1fr;
-  }
-}
-@media only screen and (max-width: 700px) {
-  body main content4 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    height: inherit;
-  }
-}
-body main .content5 {
-  width: 100%;
-  margin: 0px;
-  background-color: white;
-  border-top: 2px solid #E7E8D1;
-  float: center;
-}
-body main .content5 .logo-back {
-  height: 500px;
-  margin-top: 0px;
-  margin-bottom: 10px;
-  background-image: url("../imagenes/jabones.jpg");
-  background-position: center;
-  display: grid;
-  grid-area: "imagen-logo";
-  padding: 30px;
-}
-body main .content5 .logo-back .logo2 {
-  max-width: 50%;
-  font-size: 50px;
-  text-align: center;
-  padding: 4px;
-  margin: auto;
-}
-body main .content5 .contact {
-  display: block;
-  width: 50%;
-  margin: auto;
-  margin-bottom: 10px;
-  padding: 10px;
-  border: 1px solid #1c1c1c;
-  border-radius: 30px;
-  background-color: rgba(240, 234, 220, 0.53);
-  text-align: center;
-}
-body main .content5 .contact h1 {
-  width: 100%;
-  height: inherit;
-  font-size: 30px;
-}
-body main .content5 .contact p {
-  width: 100%;
-  font-style: italic;
-  font-size: 18px;
-  margin: 5px;
-}
-body main .content5 .contact form {
-  margin: 3px;
-  width: 100%;
-  padding: 5px;
-  text-align: center;
-}
-body main .content5 .contact form h2 {
-  font-size: 20px;
-}
-body main .content5 .contact form label {
-  font-size: 20px;
-}
-body main .content5 .contact form .form-control {
-  font-size: 20px;
-  float: center;
-  width: 70%;
-  margin: auto;
-  background: none;
-  border: none;
-  border-bottom: 2px solid #1c1c1c;
-  box-shadow: 2px 1px 2px 1px #1c1c1c;
-}
-body main .content5 .contact form textarea {
-  min-height: 100px;
-  max-height: 200px;
-  width: 100%;
-  background: none;
-  border: 1px solid #1c1c1c;
-}
-body main .content5 .contact form .boton {
-  display: block;
-  width: 100%;
-  padding: 3px;
-  font-size: 18px;
-  margin: auto;
-  border: 1px solid black;
-  background-color: #D7E6B1;
-  box-shadow: 2px 2px 2px #1c1c1c;
-  cursor: pointer;
 }
 body footer {
   background-color: #b3dbb3;
@@ -536,6 +404,4 @@ body footer .sitebelow .logo1 {
 body footer .sitebelow .logo1 #logo1 {
   text-align: center;
   width: 40%;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
