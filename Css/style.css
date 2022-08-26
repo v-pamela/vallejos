@@ -5,9 +5,12 @@
 }
 
 body{
-
+  margin: 0px;
   font-family: sans-serif;
   display: block;
+  background-color: var(--bs-body-bg);
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
 }
 
 /*   HEADER   */
@@ -20,7 +23,7 @@ header{
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "header";
-  background-color: #BCF6B6; 
+  background-color: #b3dbb3; 
 }
 
 
@@ -229,13 +232,13 @@ header{
 
 
 footer{
-  background-color: #BCF6B6;
+  background-color: #b3dbb3;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   width: 100%;
   padding: 10px;
- justify-content: center;
+  justify-content: center;
   text-align: center;
 }
 
